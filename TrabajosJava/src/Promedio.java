@@ -9,7 +9,7 @@ public class Promedio {
 
         if (promedio < 7){
             System.out.println("Reprobado por promedio");
-        } else if (asistencia > 70) {
+        } else if (asistencia < 80) {
             System.out.println("Reprobado por asistencia");
         } else  {
             System.out.println("Aprobo regular");
