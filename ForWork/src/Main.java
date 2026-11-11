@@ -10,17 +10,19 @@ public class Main {
         int acomulador=0;
         int pmd1000=0;
         int pc1000pom=0;
-        for (int i = 1; i<8; i++) {
+        for (int i = 1; i<=7; i++) {
             System.out.println("Ingresa los puntos de partida "+i+":");
             int puntos= sc.nextInt();
-            acomulador+=puntos;
-            promedio=(double)puntos/i;
 
-            if (puntos>=1000){
+            acomulador+=puntos;
+
+            if (puntos>1000){
                 pmd1000++;
             }else {
-                pc1000pom++;}
+                pc1000pom++;
+            }
         }
+        promedio=(double) acomulador / 7;
 
         System.out.println("-----------------------");
         System.out.println("  ");
